@@ -21,7 +21,7 @@
 
 
  **혹은 Git Bash에서**  
- eval "$(ssh-agent -s)"  
+ > eval "$(ssh-agent -s)"
  ssh-add ~/.ssh/id_ed25519  
 
 
@@ -114,21 +114,21 @@
  
  또는 로컬이 비어 있고 원격만 유지하고 싶으면  
 
- git fetch origin  
+ > git fetch origin  
  git reset --hard origin/main  
 
 **→ 그래도 충돌날 때 해결**  
  - 로컬 파일을 살리고 싶다면  
-   git checkout --theirs README.md  
+   > git checkout --theirs README.md  
  - 원격의 README를 살리고 싶다면  
-   git checkout --ours README.md  
+   > git checkout --ours README.md  
 
  - 그다음 절차 수행  
  - 충돌 해결 마크 제거 완료로 표시  
-   git add README.md  
+   > git add README.md  
    git rebase --continue  
  - 푸시  
-   git push -u origin main  
+   > git push -u origin main  
    **→ 푸시 안될 때(강제 푸시)**  
      > git rebase --abort  
      git push --force-with-lease origin main  
