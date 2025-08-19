@@ -106,7 +106,7 @@
 → git remote -v 로 주소 확인. 계정명과 저장소명이 정확한지 확인  
 → 권한이 없는 개인이나 조직 저장소가 아닌지 확인  
 
-**- Updates were rejected because the remote contains work**  
+- **Updates were rejected because the remote contains work**  
 → 저장소를 만들 때 README 등을 체크하여 원격에 먼저 커밋이 생긴 경우  
 → 해결  
  > git pull --rebase origin main  
