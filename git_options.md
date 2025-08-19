@@ -133,6 +133,7 @@
      > git rebase --abort  
      git push --force-with-lease origin main  
 
+
 - 파일이 100MB를 넘음  
 → GitHub 단일 파일 제한. Git LFS 사용  
 → Git LFS 설치 후  
