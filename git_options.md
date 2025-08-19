@@ -118,19 +118,20 @@
  git reset --hard origin/main  
 
 **→ 그래도 충돌날 때 해결**  
- - 로컬 파일을 살리고 싶다면  
+  > → 로컬 파일을 살리고 싶다면  
    > git checkout --theirs README.md  
- - 원격의 README를 살리고 싶다면  
+    → 원격의 README를 살리고 싶다면  
    > git checkout --ours README.md  
 
- - 그다음 절차 수행  
- - 충돌 해결 마크 제거 완료로 표시  
+ → 그다음 절차 수행  
+ → 충돌 해결 마크 제거 완료로 표시  
    > git add README.md  
-   git rebase --continue  
- - 푸시  
+   git rebase --continue
+
+ → 푸시  
    > git push -u origin main  
    **→ 푸시 안될 때(강제 푸시)**  
-     > git rebase --abort  
+     git rebase --abort  
      git push --force-with-lease origin main  
 
 
